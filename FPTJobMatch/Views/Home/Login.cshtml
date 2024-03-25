@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .containerlogin {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #FFA500;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: black; /* Change the color to orange red on hover */
+        }
+
+        .remember {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerlogin">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Input Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Input password" name="psw" required>
+
+        <div class="remember">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember</label>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <p>Do you have an account? <a asp-action="Register">Register</a></p>
+    </div>
+</body>
+</html>
